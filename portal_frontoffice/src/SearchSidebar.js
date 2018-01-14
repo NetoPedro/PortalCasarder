@@ -5,7 +5,7 @@ import './SearchSidebar.css';
 import DatePicker from "./DatePicker";
 import MapComponent from "./Map";
 import RatingStarts from "./RatingStars";
-import MainSearchBar from "./MainSearchBar";
+import SearchBar from "./SearchBar";
 
 class SearchSidebar extends Component {
     constructor(props) {
@@ -153,7 +153,7 @@ class SearchSidebar extends Component {
                         />
                     </div>
                     */}
-                    <MainSearchBar/>
+                    <SearchBar search={this.props.search} updateInputValue={this.props.updateInputValue} inputValue={this.props.searchInput}/>
                 </div>
                 <div className="row search-row">
                     <div className="container search-type-group">
