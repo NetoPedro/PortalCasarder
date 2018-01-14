@@ -71,6 +71,24 @@ export default {
             });
     },
 
+    searchTop5FacilitiesWithSolr(){
+        return fetch('http://casardercdio.ddns.net:22002/solr/facilities/select?q=*:*&rows=5&sort=averageRating%20desc',
+            {
+                method: 'GET',
+                headers: { 'Accept': 'application/json', 'Content-Type': 'application/json' },
+            })
+            .then((response) => response.json())
+            .then(function(data) {
+
+                //console.log(data);
+
+                return data;
+
+            }).catch(function(error) {
+                console.log(error);
+            });
+    },
+
     searchFacilitiesSuggestionsWithSolr(input){
         return fetch('http://casardercdio.ddns.net:22002/solr/facilities/suggest?suggest.q=' + input,
             {

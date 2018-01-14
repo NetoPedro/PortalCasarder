@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './HomePage.css';
 import ReactLoading from 'react-loading';
+import facilityService from './service/facility-service';
 import FeaturedFacilityCard from "./FeaturedFacilityCard";
 import Translate from "react-translate-component";
 
@@ -18,30 +19,11 @@ class FeaturedFacilities extends Component {
     }
 
     search() {
-        let headers = new Headers();
-
-        headers.append('Content-Type', 'application/json');
-        headers.append('Access-Control-Allow-Origin', '*');
-
         const main = this;
 
-        fetch('https://casarder.azurewebsites.net/pt/api/facilities?sortBy=rating&limit=5',
-            {
-                method: 'GET',
-                headers: headers
-            })
-            .then((response) => response.json())
-            .then(function (data) {
-
-                main.setState({facilities: data.facilitiesDTO, isLoading: false});
-
-                window.scrollTo(0,0);
-
-                return data;
-
-            }).catch(function (error) {
-                console.log(error);
-            });
+        facilityService.searchTop5FacilitiesWithSolr().then((data) =>{
+            main.setState({facilities: data.response.docs, isLoading: false});
+        });
     }
 
     render() {
