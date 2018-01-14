@@ -271,7 +271,7 @@ class FacilityDetails extends Component {
 
             return (
                 <a className="dropdown-item" key={ts.id} onClick={a => this.handleTimeSlotSelected(ts)}>
-                    {begin.hour() + ":" + begin.minute() + " - " + end.hour() + ":" + end.minute()}
+                    {begin.hour() + ":" + begin.format('mm') + " - " + end.hour() + ":" + end.format('mm')}
                 </a>
             )
         });

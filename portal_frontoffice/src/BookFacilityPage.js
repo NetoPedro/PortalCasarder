@@ -315,7 +315,7 @@ class BookFacilityPage extends Component {
                             <hr/>
                             <div className="text-left">
                                 <h6><b>{moment(this.state.timeSlot.beginTime, "MM/DD/YYYY").format("DD/MM/YYYY")}</b></h6>
-                                <a>{moment(this.state.timeSlot.beginTime, "MM/DD/YYYY hh:mm:ss a").format("hh:mm:ss A")} - {moment(this.state.timeSlot.endTime, "MM/DD/YYYY hh:mm:ss a").format("hh:mm:ss A")}</a>
+                                <a>{moment(this.state.timeSlot.beginTime, "MM/DD/YYYY hh:mm:ss a").format("HH:mm")} - {moment(this.state.timeSlot.endTime, "MM/DD/YYYY hh:mm:ss a").format("HH:mm")}</a>
                             </div>
                             <hr/>
                             {oldPrice !== "" ?
