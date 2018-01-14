@@ -159,7 +159,7 @@ class MainSearchBar extends Component {
                     </div>
                     <div className="col-md-2" style={{paddingLeft: "0", paddingRight: "0", marginBottom: "2%",height: "50px"}}>
                         <span className="input-group-btn w-100 h-100" style={{overflow: "hidden"}}>
-                            <Link to={{ pathname: '/search', search: '?i=' + this.state.inputValue, state: { input: this.state.inputValue}}}
+                            <Link to={{ pathname: '/search', state: { input: this.state.inputValue}}}
                                   className="btn btn-warning btn-lg border-0 w-100" id="search-btn">
                                 <Translate
                                     content="homepage.searchbar.button"

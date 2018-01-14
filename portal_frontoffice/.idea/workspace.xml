@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8d707913-1546-403f-92e9-b5fc2adacf00" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/SearchBar.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/SearchSidebar.js" afterPath="$PROJECT_DIR$/src/SearchSidebar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/MainSearchBar.js" afterPath="$PROJECT_DIR$/src/MainSearchBar.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ProfilePage.js" afterPath="$PROJECT_DIR$/src/ProfilePage.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.js" afterPath="$PROJECT_DIR$/src/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -18,53 +18,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SearchPage.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SearchPage.js">
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="242">
-              <caret line="274" column="28" lean-forward="true" selection-start-line="274" selection-start-column="28" selection-end-line="274" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="SearchSidebar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SearchSidebar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="257">
-              <caret line="155" column="115" lean-forward="false" selection-start-line="155" selection-start-column="115" selection-end-line="155" selection-end-column="115" />
+            <state relative-caret-position="236">
+              <caret line="121" column="27" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="27" />
               <folding>
-                <element signature="e#0#41#0" expanded="true" />
+                <marker date="1515942895636" expanded="true" signature="8217:8285" ph="{&quot;editinfo&quot;: &quot;Editar dados&quot;...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchBar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/SearchBar.js">
+      <file leaf-file-name="ProfilePage.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ProfilePage.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-851">
-              <caret line="74" column="22" lean-forward="false" selection-start-line="74" selection-start-column="22" selection-end-line="74" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="facility-service.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/service/facility-service.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="168" column="96" lean-forward="false" selection-start-line="168" selection-start-column="96" selection-end-line="168" selection-end-column="96" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MainSearchBar.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/MainSearchBar.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
+            <state relative-caret-position="211">
+              <caret line="175" column="67" lean-forward="false" selection-start-line="175" selection-start-column="67" selection-end-line="175" selection-end-column="67" />
               <folding />
             </state>
           </provider>
@@ -150,7 +120,6 @@
         <option value="$PROJECT_DIR$/src/TermsAndConditions.js" />
         <option value="$PROJECT_DIR$/src/SigninPopup.js" />
         <option value="$PROJECT_DIR$/src/Navbar.js" />
-        <option value="$PROJECT_DIR$/src/ProfilePage.js" />
         <option value="$PROJECT_DIR$/src/MyBookingsTable.js" />
         <option value="$PROJECT_DIR$/src/MyBookingsParticipantTable.js" />
         <option value="$PROJECT_DIR$/src/LocaleSwitcher.js" />
@@ -158,13 +127,14 @@
         <option value="$PROJECT_DIR$/src/BookingInfo.js" />
         <option value="$PROJECT_DIR$/src/SearchPage.js" />
         <option value="$PROJECT_DIR$/src/PasswordConfirmation.js" />
-        <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/FacilityDetails.js" />
         <option value="$PROJECT_DIR$/src/BookFacilityPage.js" />
-        <option value="$PROJECT_DIR$/src/MainSearchBar.js" />
         <option value="$PROJECT_DIR$/src/SearchSidebar.js" />
         <option value="$PROJECT_DIR$/src/SearchBar.js" />
         <option value="$PROJECT_DIR$/src/service/facility-service.js" />
+        <option value="$PROJECT_DIR$/src/MainSearchBar.js" />
+        <option value="$PROJECT_DIR$/src/index.js" />
+        <option value="$PROJECT_DIR$/src/ProfilePage.js" />
       </list>
     </option>
   </component>
@@ -368,12 +338,12 @@
       <workItem from="1515602413722" duration="136000" />
       <workItem from="1515604932010" duration="34485000" />
       <workItem from="1515744497137" duration="13041000" />
-      <workItem from="1515940336472" duration="1596000" />
+      <workItem from="1515940336472" duration="2724000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="558078000" />
+    <option name="totallyTimeSpent" value="559206000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -628,6 +598,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-43">
           <caret line="88" column="38" lean-forward="true" selection-start-line="88" selection-start-column="38" selection-end-line="88" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -652,6 +623,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1643">
           <caret line="134" column="63" lean-forward="false" selection-start-line="134" selection-start-column="63" selection-end-line="134" selection-end-column="63" />
+          <folding>
+            <element signature="e#0#41#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -734,13 +708,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ProfilePage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1453">
-          <caret line="150" column="83" lean-forward="false" selection-start-line="150" selection-start-column="83" selection-end-line="150" selection-end-column="83" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/BookingInfo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="356">
@@ -770,16 +737,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-4">
           <caret line="24" column="28" lean-forward="false" selection-start-line="24" selection-start-column="28" selection-end-line="24" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
-          <caret line="109" column="32" lean-forward="false" selection-start-line="109" selection-start-column="8" selection-end-line="109" selection-end-column="32" />
-          <folding>
-            <marker date="1515765081592" expanded="true" signature="7697:7713" ph="{&quot;editinfo&quot;: &quot;Editar dados&quot;...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -817,14 +774,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/MainSearchBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="144" column="37" lean-forward="true" selection-start-line="144" selection-start-column="37" selection-end-line="144" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/SearchSidebar.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="257">
@@ -845,8 +794,34 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/service/facility-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
+        <state relative-caret-position="-198">
           <caret line="168" column="96" lean-forward="false" selection-start-line="168" selection-start-column="96" selection-end-line="168" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/MainSearchBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="372">
+          <caret line="161" column="60" lean-forward="false" selection-start-line="161" selection-start-column="60" selection-end-line="161" selection-end-column="60" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="121" column="27" lean-forward="false" selection-start-line="121" selection-start-column="8" selection-end-line="121" selection-end-column="27" />
+          <folding>
+            <marker date="1515942895636" expanded="true" signature="8217:8285" ph="{&quot;editinfo&quot;: &quot;Editar dados&quot;...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ProfilePage.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="211">
+          <caret line="175" column="67" lean-forward="false" selection-start-line="175" selection-start-column="67" selection-end-line="175" selection-end-column="67" />
           <folding />
         </state>
       </provider>

@@ -116,6 +116,12 @@ counterpart.registerTranslations('en', {
         errorMessage: "The username or password you entered is incorrect."
     },
 
+    signupmodal: {
+        title: "Sign up",
+        passwordsDoNotMatch: "Passwords do not match. Try again, please.",
+        passwordNotAccepted: "Password is too weak. Try again with at least 6 characters."
+    },
+
     facilityDetails: {
         ratingsEvaluation: {
             ratingsNoEvaluation: "No rating given",
@@ -130,7 +136,8 @@ counterpart.registerTranslations('en', {
     profilepage:{
         editinfo: "Edit info",
         deleteaccount: "Delete account",
-        newpassword: "New Password"
+        newpassword: "New Password",
+        repeatnewpassword: "Repeat New Password"
     },
 
     bookinginfomodal:{
@@ -256,6 +263,12 @@ counterpart.registerTranslations('pt', {
         errorMessage: "Username or password incorretos."
     },
 
+    signupmodal: {
+        title: "Registar",
+        passwordsDoNotMatch: "Passwords inseridas não coincidem. Tente novamente, por favor.",
+        passwordNotAccepted: "Password demasiado fraca. Tente novamente com pelo menos 6 caracteres."
+    },
+
     facilityDetails: {
         ratingsEvaluation: {
             ratingsNoEvaluation: "Não avaliado",
@@ -270,7 +283,8 @@ counterpart.registerTranslations('pt', {
     profilepage:{
         editinfo: "Editar dados",
         deleteaccount: "Apagar conta",
-        newpassword: "Nova Password"
+        newpassword: "Nova Password",
+        repeatnewpassword: "Repetir Nova Password"
     },
 
     bookinginfomodal:{
