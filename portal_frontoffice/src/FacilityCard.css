@@ -1,0 +1,61 @@
+.ratings{
+    margin-left: 25px;
+}
+
+.checked {
+    color: orange;
+}
+
+.container-fluid{
+    margin-top: 15px;
+    padding-left: 0px;
+}
+
+.facility-card{
+    background-color: #FFF;
+    align-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0;
+}
+
+.facility-promotion-label{
+    position: absolute;
+    top: 10%;
+    left: 0;
+    color: white;
+    max-width: 75%;
+    padding: 10px;
+    font-size: small;
+    background: #FFC107;
+    word-wrap: break-word;
+}
+
+.facility-details{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.facility-description{
+    margin-top: 15px;
+    text-align: left;
+    font-size: small;
+}
+
+.facility-image{
+    width: 100%;
+}
+
+.facility-features{
+    color: #FFC107;
+    margin: 0px;
+}
+
+.btn-warning-custom, .btn-warning-custom:hover{
+    margin-top: 15px;
+    color: white;
+}
+
+.btn {
+    border-radius: 0;
+}
+

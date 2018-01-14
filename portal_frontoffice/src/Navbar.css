@@ -1,0 +1,55 @@
+.btn-warning, .btn-warning:hover{
+    color: white;
+}
+
+.navbar-custom-transparent{
+    /*background: black !important;*/
+    background: none !important;
+}
+
+.navbar-custom-white{
+    background: white !important;
+}
+
+.navbar-brand-white{
+    color: white !important;
+}
+
+.navbar-brand-black{
+    color: black !important;
+}
+
+.btn-link-white{
+    color: white !important;
+}
+
+.btn-link-black{
+    color: black !important;
+}
+
+.btn-link-yellow{
+    color: #FFC107 !important;
+}
+
+.btn-separator:after {
+    content: ' ';
+    display: block;
+    float: left;
+    background: #ADADAD;
+    margin: 0 10px;
+    height: 34px;
+    width: 1px;
+}
+
+.dropdown-menu-navbar {
+    right: 0;
+    left: auto;
+}
+
+.dropdown-toggle-navbar{
+    margin: 0 !important;
+}
+
+.btn-dropdown-toggle{
+    background: none;
+}

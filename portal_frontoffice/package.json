@@ -1,0 +1,40 @@
+{
+  "name": "portal_frontoffice",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta.3",
+    "counterpart": "^0.18.5",
+    "firebase": "^4.8.1",
+    "jquery": "^3.2.1",
+    "moment": "^2.20.1",
+    "node-fetch": "^1.7.3",
+    "prop-types": "^15.6.0",
+    "qrcode.react": "^0.7.2",
+    "react": "^16.2.0",
+    "react-autosuggest": "^9.3.2",
+    "react-bs-notifier": "^4.4.5",
+    "react-confirm-alert": "^1.0.8",
+    "react-datepicker": "^0.61.0",
+    "react-dom": "^16.1.1",
+    "react-facebook-login": "^3.7.2",
+    "react-google-maps": "^9.4.5",
+    "react-helmet": "^5.2.0",
+    "react-interpolate-component": "^0.11.0",
+    "react-loading": "^1.0.3",
+    "react-modal": "^3.1.10",
+    "react-paginate": "^5.0.0",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts": "1.0.17",
+    "react-snap": "^1.9.1",
+    "react-translate-component": "^0.14.0"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
+  }
+}

@@ -1,0 +1,20 @@
+.book-facility-page{
+    padding-top: 15px;
+    color: rgb(72,72,72);
+}
+
+.book-facility-title{
+    margin-bottom: 30px;
+}
+
+.col-price-information{
+    padding: 16px 16px 16px 16px;
+    border: solid 1px #DDDDDD;
+    border-radius: 3px;
+    display: block;
+}
+
+.hr-large{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}

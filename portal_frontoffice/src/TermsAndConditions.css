@@ -1,0 +1,6 @@
+.roman > li{
+    list-style-type: lower-roman;
+}
+.lowerlatin > li{
+     list-style-type: lower-latin;
+ }

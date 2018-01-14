@@ -1,0 +1,65 @@
+
+.btn-sort:hover,
+.btn-sort{
+    color: black;
+    background-color: white;
+    border-color: #DDDDDD;
+    outline: none;
+}
+
+.btn-sort:active,
+.btn-sort:visited,
+.btn-sort:focus {
+    outline: none;
+}
+
+.search-page-header{
+    background-image: url("img/hp_header.jpg");
+    background-size: 100% 100%;
+    height: 300px;
+    width: 100%;
+}
+
+.pagination-ul{
+    display: inline;
+}
+.pagination-ul > li:last-child{
+    float: right;
+}
+.pagination-ul > li:first-child{
+    float: left;
+}
+.pagination-ul > li > a.hover {
+    font-size: large;
+}
+.pagination-ul > li:visited, li:active, li:link, li > a:visited,a:active,a:link {
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+.pagination-ul > li > a {
+     outline: none;
+ }
+.pagination-active-page{
+    font-weight: bolder;
+}
+.pagination-disabled-page{
+    color: white !important;
+}
+
+.snow{
+    background-image:
+            url(https://image.ibb.co/k0aqx6/snow.png),
+            url(https://image.ibb.co/eCahc6/snow1.png),
+            url(https://image.ibb.co/bOboH6/snow2.png);
+    width: 100%;
+    height:100%;
+    top: 0;
+    left: 0;
+    z-index:1;
+    animation: snow 10s linear infinite;
+}
+@keyframes snow {
+    from {background-position: 0px 0px, 0px 0px, 0px 0px;}
+    to {background-position: 1000px 2000px, 400px 800px, -200px 600px;}
+}
