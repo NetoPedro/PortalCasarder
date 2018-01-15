@@ -86,7 +86,7 @@ class ProfilePage extends Component {
     confirmInfoEdition(password){
         if(this.state.repeatNewPassword !== this.state.newPassword){
             this.setState({passwordIsWeak: false, passwordsDoNotMatch: true});
-        }else if(this.state.newPassword.length < 6){
+        }else if(this.state.newPassword.length < 6 && this.state.newPassword !== ''){
             this.setState({passwordIsWeak: true, passwordsDoNotMatch: false});
         }else {
             authService.updateUserInfo(this.state.newUsername, this.state.newEmail, this.state.newPassword, password).then((r) => {

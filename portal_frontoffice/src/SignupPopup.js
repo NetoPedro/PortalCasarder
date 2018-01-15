@@ -3,6 +3,7 @@ import './SigninPopup.css';
 import AuthenticationService from "./service/auth/AuthenticationService";
 import FacebookComponent from "./FacebookComponent";
 import success from './img/success.png';
+import Translate from "react-translate-component";
 
 class SignupPopup extends Component {
     constructor(props) {
@@ -14,6 +15,7 @@ class SignupPopup extends Component {
             repeatedPassword: '',
             email: '',
             passwordsDoNotMatch: false,
+            passwordIsWeak: false,
             success: false,
             acceptedTerms: false
         };
@@ -67,7 +69,12 @@ class SignupPopup extends Component {
 
     signup() {
         if(this.state.password !== this.state.repeatedPassword){
-            this.setState({passwordsDoNotMatch: true});
+            this.setState({passwordsDoNotMatch: true, passwordIsWeak: false});
+            return;
+        }
+
+        if(this.state.password.length < 6){
+            this.setState({passwordsDoNotMatch: false, passwordIsWeak: true});
             return;
         }
 
@@ -75,11 +82,17 @@ class SignupPopup extends Component {
         AuthenticationService.userSignup(this.state.username, this.state.password, this.state.email)
             .then(function (response) {
                 if(response){
-                    document.getElementById("signup-popup-close-btn").click();
-                    window.location.reload();
+
+
+                    t.setState({
+                        success: true
+                    });
+                    setTimeout(() => {
+                        window.location.reload();}, 1000);
+
                 } else {
                     t.setState({
-                        failed: true
+                        success: false
                     });
                 }
             });
@@ -98,12 +111,11 @@ class SignupPopup extends Component {
             <div className="modal-dialog" role="document">
                 <div className="modal-content">
                     <div className="modal-header">
-                        <h5 className="modal-title" id="modalLabel">Account created with success. Check your email.</h5>
+                        <h5 className="modal-title" id="modalLabel"><Translate content="signupmodal.success" /></h5>
                         <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
                     </div>
-                    <img src={success} className="img-fluid" style={{width:"40px",height:"40px"}}/>
                 </div>
             </div>
         </div>);
@@ -113,7 +125,7 @@ class SignupPopup extends Component {
                 <div className="modal-dialog" role="document">
                     <div className="modal-content">
                         <div className="modal-header">
-                            <h5 className="modal-title" id="modalLabel">Sign up</h5>
+                            <h5 className="modal-title" id="modalLabel"><Translate content="signupmodal.title" /></h5>
                             <button type="button" className="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -144,12 +156,15 @@ class SignupPopup extends Component {
                                            required
                                            value={this.state.repeatedPassword} onChange={evt => this.updateRepeatedPasswordInput(evt.target.value)}/>
                                 </div>
-                                {this.state.passwordsDoNotMatch? <label style={{color: "red"}}>Passwords do not match. Try again</label> : ""}
+                                <div className="col text-danger">
+                                    {this.state.passwordsDoNotMatch && <Translate content="signupmodal.passwordsDoNotMatch" />}
+                                    {this.state.passwordIsWeak && <Translate content="signupmodal.passwordNotAccepted" />}
+                                </div>
                                 <div className="form-check">
                                     <div className="checkbox">
                                         <label  className="form-check-label">
                                             <input type="checkbox" className="form-check-input" value={this.state.acceptedTerms}
-                                                onChange={this.acceptTerms}/> Li e aceito os <a href="/termsconditions">Termos e Condições</a>
+                                                onChange={this.acceptTerms}/> <Translate content="signupmodal.readandaccept" /> <a href="/termsconditions"><Translate content="footer.terms" /></a>
                                         </label>
                                     </div>
                                 </div>

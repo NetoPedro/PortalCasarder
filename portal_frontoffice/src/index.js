@@ -119,7 +119,9 @@ counterpart.registerTranslations('en', {
     signupmodal: {
         title: "Sign up",
         passwordsDoNotMatch: "Passwords do not match. Try again, please.",
-        passwordNotAccepted: "Password is too weak. Try again with at least 6 characters."
+        passwordNotAccepted: "Password is too weak. Try again with at least 6 characters.",
+        readandaccept: "I have read and accept ",
+        success: "Account created with success. Check your email."
     },
 
     facilityDetails: {
@@ -266,7 +268,9 @@ counterpart.registerTranslations('pt', {
     signupmodal: {
         title: "Registar",
         passwordsDoNotMatch: "Passwords inseridas não coincidem. Tente novamente, por favor.",
-        passwordNotAccepted: "Password demasiado fraca. Tente novamente com pelo menos 6 caracteres."
+        passwordNotAccepted: "Password demasiado fraca. Tente novamente com pelo menos 6 caracteres.",
+        readandaccept: "Li e aceito os ",
+        success: "Conta criada com sucesso. Consulte o seu email."
     },
 
     facilityDetails: {
